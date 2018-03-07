@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/dayLeftPadding"
+        android:layout_marginRight="@dimen/dayLeftPadding"
+        android:text="Day"
+        android:textSize="@dimen/dayLabelTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/dayField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dayField" />
+
+    <TextView
+        android:id="@+id/monthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dayLeftPadding"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="Month"
+        android:textSize="@dimen/dayLabelTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/monthField"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dayBottomPadding"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthField"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <EditText
+        android:id="@+id/dayField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dayTopPadding"
+        android:ems="3"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:text="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/monthField"
+        tools:layout_editor_absoluteY="24dp"
+        />
+
+    <EditText
+        android:id="@+id/monthField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dayEntryLeftPadding"
+        android:layout_marginLeft="@dimen/dayLeftPadding"
+        android:layout_marginRight="@dimen/dayLeftPadding"
+        android:ems="3"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/monthLabel"
+        app:layout_constraintTop_toBottomOf="@+id/dayField"
+        tools:layout_editor_absoluteY="94dp"
+        />
+
+</android.support.constraint.ConstraintLayout>

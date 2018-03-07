@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/today"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/today" />
+    <item android:id="@+id/yesterday"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/yesterday" />
+    <item android:id="@+id/tomorrow"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/tomorrow" />
+    <item android:id="@+id/dayAndMonth"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/day_and_month" />
+    <item android:id="@+id/country"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/country"/>
+</menu>

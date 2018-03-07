@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NameDays</string>
+    <string name="app_label">Name Days</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="day_and_month">Day and Month</string>
+    <string name="country">Country</string>
+    <string name="country_dialog_text">Select Country</string>
+    <string name="day_and_month_dialog_text">Select Day and Month</string>
+</resources>

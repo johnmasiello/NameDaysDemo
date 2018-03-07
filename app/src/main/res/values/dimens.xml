@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dayLeftPadding">24dp</dimen>
+    <dimen name="dayTopPadding">24dp</dimen>
+    <dimen name="dayBottomPadding">36dp</dimen>
+    <dimen name="dayLabelTextSize">16sp</dimen>
+    <dimen name="dayEntryLeftPadding">8dp</dimen>
+</resources>
