@@ -10,6 +10,7 @@ import android.content.DialogInterface;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.JsonReader;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -59,8 +60,8 @@ interface DayAndMonthCallback {
 }
 
 /**
- * A class that demonstrates making a simple GET request with
- * <a href="https://api.abalin.net">Namedays API</a>
+ * A class
+ *
  */
 public class MainActivity extends AppCompatActivity implements DownloadCallback, CountryCallback,
     DayAndMonthCallback {
@@ -329,6 +330,7 @@ public class MainActivity extends AppCompatActivity implements DownloadCallback,
     private static final String MONTH_KEY = "Month";
     private static final String COUNTRY_DIALOG_TAG = "COUNTRY";
     private static final String DAY_MONTH_DIALOG_TAG = "DAY AND MONTH";
+    private static final String API_HOST_NAME = "https://api.abalin.net/get/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -470,7 +472,7 @@ public class MainActivity extends AppCompatActivity implements DownloadCallback,
             case R.id.today:
                 try {
                     apiFunction = id;
-                    makeRequest(new URL("https://api.abalin.net/today"));
+                    makeRequest(new URL(API_HOST_NAME + "today"));
                 } catch (MalformedURLException e) {
                     logError("Request", e.getMessage());
                 }
@@ -479,7 +481,7 @@ public class MainActivity extends AppCompatActivity implements DownloadCallback,
             case R.id.yesterday:
                 try {
                     apiFunction = id;
-                    makeRequest(new URL("https://api.abalin.net/yesterday"));
+                    makeRequest(new URL(API_HOST_NAME + "yesterday"));
                 } catch (MalformedURLException e) {
                     logError("Request", e.getMessage());
                 }
@@ -488,7 +490,7 @@ public class MainActivity extends AppCompatActivity implements DownloadCallback,
             case R.id.tomorrow:
                 try {
                     apiFunction = id;
-                    makeRequest(new URL("https://api.abalin.net/tomorrow"));
+                    makeRequest(new URL(API_HOST_NAME + "tomorrow"));
                 } catch (MalformedURLException e) {
                     logError("Request", e.getMessage());
                 }
@@ -586,7 +588,7 @@ public class MainActivity extends AppCompatActivity implements DownloadCallback,
         this.month = month;
 
         try {
-            makeRequest(new URL(String.format("https://api.abalin.net/namedays?day=%d&month=%d", day, month)));
+            makeRequest(new URL(String.format(API_HOST_NAME + "namedays?day=%d&month=%d", day, month)));
         } catch (MalformedURLException e) {
             logError("Request", e.getMessage());
         }
