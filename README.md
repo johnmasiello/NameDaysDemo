@@ -1,22 +1,24 @@
 # NameDaysDemo
-## A demo of Name Days API
-This app demonstrates a simple GET request with Namedays API https://api.abalin.net
+### A demo of Name Days API
+This app demonstrates a simple GET request with [Namedays API ](https://api.abalin.net)
 
-## Get the name days for Today!
+### Get the name days for Today!
 
-// Image goes here
+![Today](images/Screenshot_20180507-042054_small.png)
 
-## Get the name days for Yesterday!
+### Get the name days for Yesterday!
 
-// Image goes here
+![Today](images/Screenshot_20180507-042101_small.png)
 
-## Get the name days for any Month, Day
-*Feb 02*
+### Get the name days for any Month, Day
+**_Feb 02_**
 
-// Image goes here
+![Today](images/Screenshot_20180507-042152_small.png)
 
-## Suppports multiple locales
+![Today](images/Screenshot_20180507-042210_small.png)
 
-// Image drop down here
+### Supports multiple Locales
 
-// Image name days for today
+![Today](images/Screenshot_20180507-042258_small.png)
+
+![Today](images/Screenshot_20180507-042305_small.png)
