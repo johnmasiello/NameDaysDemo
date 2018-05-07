@@ -21,4 +21,4 @@ This app demonstrates a simple GET request with [Namedays API ](https://api.abal
 
 ![Today](images/Screenshot_20180507-042258_small.png)
 
-![Today](images/Screenshot_20180507-042305_small.png)
+![Today](images/Screenshot_20180507-043800_small.png)
